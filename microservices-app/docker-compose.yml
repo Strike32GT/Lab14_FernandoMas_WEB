@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  eureka-server:
+    image: eureka-server:v1
+    container_name: eureka-server
+    network_mode: "host"
+
+  categoria-service:
+    image: categoria-service:v1
+    container_name: categoria-service
+    network_mode: "host"
+    depends_on:
+      - eureka-server
+
+  producto-service:
+    image: producto-service:v1
+    container_name: producto-service
+    network_mode: "host"
+    depends_on:
+      - eureka-server
+
+  api-gateway:
+    image: api-gateway:v1
+    container_name: api-gateway
+    network_mode: "host"
+    depends_on:
+      - categoria-service
+      - producto-service
