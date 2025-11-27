@@ -9,7 +9,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
-@RequestMapping("/api/categorias")
+@RequestMapping("lab14fernandomasweb-production-52da.up.railway.app")
 public class CategoriaController {
     private final CategoriaRepository repository;
 
