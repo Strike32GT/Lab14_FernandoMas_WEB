@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiCategorias = axios.create({
-  baseURL: "lab14fernandomasweb-production-52da.up.railway.app",
+  baseURL: "https://lab14fernandomasweb-production-52da.up.railway.app",
 });
 
 
