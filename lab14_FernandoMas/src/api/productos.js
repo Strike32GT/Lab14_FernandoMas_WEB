@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiProductos = axios.create({
-  baseURL: "http://localhost:8082",
+  baseURL: "https://blissful-hope-production.up.railway.app",
 });
 
 
